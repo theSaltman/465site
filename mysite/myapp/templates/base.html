@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static "css/foundation.css"%}">
+    <link rel="stylesheet" href="{% static "css/app.css"%}">
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+          <div class="logo"></div>
+
+          <a href="../">Home</a>
+          <a href="../store">Shop</a>
+          <a href="../chat">Support</a>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="../cart">Cart</a></li>
+          <li><a href="../login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+      <!--    <h1>{{ body }}</h1> html sucks.-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="{% static "js/vendor/jquery.js" %}"></script>
+  <script src="{% static "js/vendor/what-input.js" %}"></script>
+  <script src="{% static "js/app.js" %}"></script>
+  <script src="{% static "js/vendor/foundation.js" %}"></script>
+</body>
+</html>
